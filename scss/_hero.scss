@@ -12,10 +12,18 @@
   // В макете шарик под морожкой - 346*344 / 324*322 / 538*538 ?
   // Предлагаю исправить на одинаковый 346*346 / 324*324 / 538*538
   background-image: url(../images/ellipse-3.svg);
-  background-position: left 36px top 27px;
+  background-position: left 137px top 27px;
   background-size: 344px 344px;
   background-repeat: no-repeat;
   z-index: 1;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 15px;
+    padding-left: 34px;
+    padding-bottom: 59px;
+    background-size: 324px 324px;
+    background-position: left 307px top -31px;
+  }
 }
 .hero-title {
   position: relative;
@@ -36,6 +44,10 @@
 
   // transition-property: font-size;
   // transition-duration: 3000ms;
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    max-width: 162px;
+  }
 }
 
 // .hero-title:hover {
@@ -46,13 +58,22 @@
   color: #d41443;
   font-size: 48px;
   line-height: 96.5%;
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+  }
 }
 
-.hero-icecrem {
+.hero-img-icecrem {
   position: absolute;
   bottom: 0;
   right: 32px;
   z-index: 1;
+  @media screen and (min-width: 768px) {
+    right: 378px;
+
+    width: 143px;
+    height: 336px;
+  }
 }
 
 // можливо кнопки винести в окремий scss ?
@@ -94,4 +115,77 @@
 
 .hero-btn-wrapper {
   display: flex;
+}
+
+.numbers-wrapper {
+  position: absolute;
+  top: 74px;
+  right: 32px;
+  z-index: 1;
+  text-align: right;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.number {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 1.145;
+  /* identical to box height */
+
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #d41443;
+}
+
+.number-text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: right;
+
+  color: #ffffff;
+}
+.hero-img-milk {
+  position: absolute;
+  bottom: 10px;
+  left: 32px;
+  z-index: 1;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.hero-img-girl {
+  position: absolute;
+  bottom: 1px;
+  right: 34px;
+  z-index: 2;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.hero-txt {
+  margin-top: 66px;
+  margin-left: 120px;
+
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 1.5;
+  color: #ffffff;
+  max-width: 114px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
