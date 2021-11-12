@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draft - iceCreme</title>
+    <link rel="stylesheet" href="./scss/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+    <div class="container">
+        <p> logo - header - menu</p>
+    </div>
+    <!--  мій робочий контейнер, який треба зводити зі всіма-->
+
+    <div class="container hero">
+        <h1 class="hero-title">ice cream made with <span class="hero-title-accent">passion</span></h1>
+
+        <!-- кнопка НЕ може працювати як лінк. 
+            є 3 способи:
+                1. стилізувати лінк як кнопку - Репета за таке б не похвалив )
+                2. java script / напевне можна розібратись, але не хочу поперед паровозу
+                3. форма - зробив формою       -->
+
+
+        <div class="hero-btn-wrapper">
+            <!-- <button class="btn btn3" type="button">Products</button> -->
+            <form action="#products-anchor">
+                <input class="btn btn3" type="submit" value="Products" />
+            </form>
+
+            <!-- <button class="btn btn2" type="button">How it’s made?</button>. -->
+            <form action="#how-anchor">
+                <input class="btn btn2" type="submit" value="How it’s made?" />
+            </form>
+        </div>
+        <!-- зробив через picture бо сюди зручніше дописувати різні варіанти -->
+        <picture>
+            <source srcset="../images/slider-pic7-1-1x.png 1x, ../images/slider-pic7-1-2x.png 2x" type="image/jpeg">
+            <img class="hero-icecrem animate__animated animate__bounce" src="../images/slider-pic7-1-1x.png"
+                alt="Wery testy ice-cream" width="171">
+        </picture>
+    </div>
+
+    <!-- закінчився робочий контейнер,
+    далі тестовий кусок, щоб було зручніше -->
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum amet laudantium, blanditiis officiis
+            doloremque quod quos velit cupiditate natus. Molestias eligendi error animi voluptatem repellat nostrum, est
+            architecto adipisci quam.</p>
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro numquam, magni distinctio autem sapiente
+            reprehenderit atque, quae amet quaerat a obcaecati dignissimos impedit necessitatibus fugit, cum saepe
+            tempore voluptatem in?</div>
+
+    </div>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum amet laudantium, blanditiis officiis
+            doloremque
+            quod quos velit cupiditate natus. Molestias eligendi error animi voluptatem repellat nostrum, est architecto
+            adipisci quam.</p>
+        <ul>
+            <li>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum amet laudantium, blanditiis officiis
+                    doloremque
+                    quod quos velit cupiditate natus. Molestias eligendi error animi voluptatem repellat nostrum, est
+                    architecto
+                    adipisci quam.</p>
+            </li>
+            <li>
+                <h2 id="how-anchor"> <strong>How</strong> anchor</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum amet laudantium, blanditiis officiis
+                    doloremque
+                    quod quos velit cupiditate natus. Molestias eligendi error animi voluptatem repellat nostrum, est
+                    architecto
+                    adipisci quam.</p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum amet laudantium, blanditiis officiis
+                    doloremque
+                    quod quos velit cupiditate natus. Molestias eligendi error animi voluptatem repellat nostrum, est
+                    architecto
+                    adipisci quam.</p>
+            </li>
+        </ul>
+        <h3 id="products-anchor"> <strong>Содержание</strong> первой главы</h3>
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro numquam, magni distinctio autem sapiente
+            reprehenderit atque, quae amet quaerat a obcaecati dignissimos impedit necessitatibus fugit, cum saepe
+            tempore
+            voluptatem in?</div>
+    </div>
+
+
+</body>
+
+</html>
